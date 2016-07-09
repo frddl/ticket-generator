@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Welcome to Ticket Generator!</title>
+  <link rel="shortcut icon" href="http://static.tmimgcdn.com/img/favicon.ico">
+  <link rel="icon" href="http://static.tmimgcdn.com/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/switchery.min.css">
+  <script type="text/javascript" src="js/switchery.min.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+  
+  <br><br><br><br><h1>Welcome to Ticket Generator!</h1>
+  
+  <form action="ticket.php" method="post">
+  <div class="col-2">
+    <label>
+      Name
+      <input placeholder="What is your full name?" id="name" name="name" tabindex="1" required>
+    </label>
+  </div>
+  <div class="col-2">
+    <label>
+      Address
+      <input placeholder="Where do you currently live?" id="address" name="address" tabindex="2" required>
+    </label>
+  </div>
+  
+  <div class="col-2">
+    <label>
+      Email
+      <input placeholder="Where should we send ticket link?" id="email" name="email" tabindex="3" required>
+    </label>
+  </div>
+  <div class="col-2">
+    <label>
+      Phone number
+      <input placeholder="What is your #?" id="number" name="number" tabindex="3" required>
+    </label>
+  </div>
+
+  <div class="col-submit">
+    <button class="submitbtn">Give me my ticket, hon!</button>
+  </div>
+  
+  </form>
+  </div>
+
+  <br><br><br><br>
+  <center>
+    <h3>Theme by Jake Rocheleau<br>Ticket Generator by <a href="http://github.com/frddl">Farid Mammadov</a></h3>
+  </center>
+
+<script type="text/javascript">
+var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+
+elems.forEach(function(html) {
+  var switchery = new Switchery(html);
+});
+</script>
+</body>
+</html>
